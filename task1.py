@@ -10,8 +10,7 @@ class TrafficLight:
             self.switch('Желтый', 2)
             self.switch('Зеленый', 5)
 
-    @staticmethod
-    def switch(color, sleep_time):
+    def switch(self, color, sleep_time):
         TrafficLight.__color = color
         print(TrafficLight.__color)
         sleep(sleep_time)

@@ -12,12 +12,10 @@ class Worker:
 
 
 class Position(Worker):
-    @staticmethod
-    def get_full_name():
+    def get_full_name(self):
         return Worker.surname + ' ' + Worker.name
 
-    @staticmethod
-    def get_total_income():
+    def get_total_income(self):
         return Worker._income['salary'] + Worker._income['bonus']
 
 

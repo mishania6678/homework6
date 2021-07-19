@@ -4,8 +4,7 @@ class Road:
     def __init__(self, length, width):
         Road._length, Road._width = length, width
 
-    @staticmethod
-    def density_calc(m, n):
+    def density_calc(self, m, n):
         return Road._length * Road._width * m * n
 
 
